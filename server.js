@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ status: "ok", message: "Binance Proxy activo" });
+  res.json({ status: "ok", message: "Binance Proxy activo ✅" });
 });
 
 app.post("/binance", async (req, res) => {
@@ -55,18 +55,3 @@ app.post("/binance", async (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`🚀 Binance Proxy en puerto ${PORT}`));
-📄 package.json (copia esto completo):
-
-{
-  "name": "binance-proxy",
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "node-fetch": "^3.3.2",
-    "cors": "^2.8.5"
-  }
-}
