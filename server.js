@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ status: "ok", message: "Binance Proxy activo ✅" });
+  res.json({ status: "ok", message: "Binance Proxy activo" });
 });
 
 app.post("/binance", async (req, res) => {
